@@ -15,7 +15,7 @@ log.log("# Booting village");
 
 // Configuration
 const world_config = {
-    dimensions: [8, 8, 8],
+    dimensions: [2, 2, 2],
     populate: false
 };
 
