@@ -3,6 +3,7 @@
     "@stdlib/stdlib": "^0.0.96",
     "browservefy": "^0.0.10",
     "cli-progress": "^3.9.1",
+    "jszip": "^3.7.1",
     "random": "^3.0.6",
     "shelljs": "^0.8.4",
     "voxel-engine": "^0.20.2",
