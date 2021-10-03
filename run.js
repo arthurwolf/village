@@ -1,21 +1,21 @@
 // Imports
 
-// Libraries, core
-const World = require('./lib/world.js');
-const Individual = require('./lib/individual.js');
-
 // Libraries, utils
 const Log = require('./lib/utils/log.js');
 
 // Instantiate utils
 const log = new Log();
 
+// Libraries, core
+const World = require('./lib/world.js');
+const Individual = require('./lib/individual.js');
+
 // Boot time
 log.log("# Booting village");
 
 // Configuration
 const world_config = {
-    dimensions: [2, 2, 2],
+    dimensions: [8, 8, 8],
     populate: false
 };
 
@@ -32,4 +32,4 @@ world.add_individual(individual);
 
 // Start running the world
 log.log("# Start running the world");
-world.run();
+world.run(32);
