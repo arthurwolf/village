@@ -1,16 +1,18 @@
-# village
+# Village
 
 Artificial Intelligence training ground/experiment.
 
-Originally intended as a way to improve villager Artificial Intelligence for Minecraft Mods, this project is currently meant as a platform to experiment with different ways of evolving intelligence of individuals/populations in voxel worlds, mostly out of curiosity, and as an exploration of what is possible.
+Originally intended as a way to improve villager Artificial Intelligence for Minetest (or Minecraft Mods), this project is currently meant as a platform to experiment with different ways of evolving intelligence of individuals/populations in voxel worlds, mostly out of curiosity, and as an exploration of what is possible.
 
-The desired result would be to see interesting behaviors emerge naturally from the evolution of brains (using both Neural Networks and more traditional task-oriented programming modules).
+The desired result would be to see interesting behaviors emerge naturally from the evolution of populations of simple body+brain units (using both Neural Networks and more traditional task-oriented programming modules working together to attempt to see emergent properties rise from the magic of Evolution).
+
 # Plan
 Here is the current working plan, approximately:
 * Generate an engine/world the individuals can live inside of
 * Create a DNA-based body and mind that can freely evolve
 * Create a constraint-filled environment and run successive generations, see if we can get improvements to occur
 * Try to use more modern AI tools for at least part of the brain structure
+
 # Future work:
 * Auto-export world data to Minecraft-compatible files, see npm:prismarine-world
 * Create minecraft servers where current evolution can be seen live w/ https://www.npmjs.com/package/flying-squid
@@ -18,8 +20,14 @@ Here is the current working plan, approximately:
 * Actually do renders of the brain structure and functionning as video along with the actual world
 * Implement crafting for individuals
 * Abstract rendering of timelapses/visuals, so we can use different rendering engines not just the one
-# Unorganized notes:
-These are mostly for quick reference and as reminders of future work:
+* Use more Cloudy stuff, use buckets for data storage, and process stuff remotely, use containers. Stuff.
+* Maybe the step-by-step saves of world states should use Git instead of the current "pile of json zipped" thing we do? (https://github.com/mojombo/grit ?)
+
+# Misc / Unorganized notes:
+These are mostly for quick reference and as reminders of future work. 
+
+## Links
+
 * https://leafletjs.com/
 * https://www.npmjs.com/package/perlin-noise
  * https://github.com/josephg/noisejs (also, try using shaders instead)
@@ -59,16 +67,18 @@ These are mostly for quick reference and as reminders of future work:
  * General Pupeteer information: https://github.com/puppeteer/puppeteer/#usage
 
 Command to remember for the voxel test: ./node_modules/browservefy/bin/browservefy voxel.js 3000
-# Assets
+
+## Assets
 Textures/ressource packs:
 * https://github.com/Athemis/PixelPerfectionCE (looks good enough, good/CC license, seems perfect for our needs)
 * https://www.npmjs.com/package/programmerart-textures
 
-Minecraft:
+
+## Minecraft:
 * Minecraft Botting API: https://github.com/PrismarineJS/mineflayer (can ultimately be used to implement the villagers as bots/players, and see them play the actual game)
 * Prismarine viewer, in the mineflayer family, an Electron minecraft viewer example: https://github.com/PrismarineJS/prismarine-viewer
 
-Fun things / Inspiration:
+## Fun things / Inspiration:
 * https://citycraft.io/ (Uses NOA)
 * So neat: http://qake.se/demo/
 * https://wwwtyro.github.io/vixel-editor/
